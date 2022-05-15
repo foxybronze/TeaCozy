@@ -1,0 +1,133 @@
+/*give the top a black background*/
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: Helvetica;
+  font-size: 22px;
+  background-color: black;
+  color: seashell;
+  opacity: 0.9;
+}
+
+/* Section 1: Sticky Header */
+nav {
+  position: fixed;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  z-index: 10;
+  width: 100%;
+  border-bottom: 1px solid seashell;
+  background-color: black;
+  text-align: center;
+  top: 0;
+}
+
+.navbox {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 1200px;
+  height: 69px;
+  top: 0;
+}
+
+
+nav .logo {
+  height: 50px;
+  margin: 10px;
+}
+
+nav ul {
+   list-style: none;
+}
+nav li {
+  text-decoration: underline;
+  display: inline-block;
+}
+
+.main, footer {
+  position: relative;
+  top: 70px;
+}
+
+/* Section 2: Mission */
+
+#banner {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 1200px;
+  height: 700px;
+  background-image: url('https://content.codecademy.com/courses/freelance-1/unit-4/img-mission-background.jpg');
+}
+
+ .mission {
+  text-align: center;
+  width: 1200px;
+  background-color: black;
+}
+
+/*Section 3: Teas */
+#Month {
+  margin: 0 auto;
+  position: relative;
+  text-align: center;
+  width: 1000px;
+}
+.tea {
+  height: 200px;
+  width: 300px;
+}
+.card {
+  margin: 10px;
+  position: relative;
+  display: inline-block;
+  text-align: center;
+}
+
+/* Section 4: Locations */
+
+#locations {
+  margin: 0 auto;
+  position: relative;
+  text-align: center; 
+  background-image: url('https://content.codecademy.com/courses/freelance-1/unit-4/img-locations-background.jpg'); 
+  height: 500px;
+  width: 1200px;
+}
+.loc_text {
+  padding: 40px;
+  position: relative;
+  text-align: center;
+  display: inline-block;
+}
+
+.shops {
+  position: relative;
+  opacity: 1;
+  text-align: center;
+  background-color: black;
+  width: 300px;
+  display: inline-block;
+  margin: 15px 20px;
+}
+
+
+/* Section 5: Footer */
+footer {
+ position: relative;
+ background-color: black;
+}
+footer .contact {
+  text-align: center;
+  height: 200px;
+}
+footer .copyright {
+  position: relative;
+  left: 20px;
+}
